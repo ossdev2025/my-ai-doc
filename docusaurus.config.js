@@ -21,9 +21,9 @@ const config = {
     locales: ['en'],
   },
   scripts: [
-    // Google Tag Manager
+    // Google tag (gtag.js)
     {
-      src: 'https://www.googletagmanager.com/gtm.js?id=GTM-N449P92M',
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-J9JYY1B28K',
       async: true,
     },
   ],
