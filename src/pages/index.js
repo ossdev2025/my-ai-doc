@@ -1,42 +1,54 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import React from 'react';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
+      title="@ossdev2025"
+      description="東大でAIを勉強して、自分の勉強用にまとめたblogです / A blog documenting experiments in LLMOps and AI development"
+    >
+      <main style={{ padding: '2rem' }}>
+        <h1>@ossdev2025</h1>
+
+        <section style={{ marginBottom: '2rem' }}>
+          <h2>🇯🇵 日本語</h2>
+          <p>東大でAIを勉強して、自分の勉強用にまとめたblogです。</p>
+          <p>
+            📌 GitHubリポジトリはこちら：{' '}
+            <a href="https://github.com/ossdev2025/my-ai-doc" target="_blank" rel="noopener noreferrer">
+              ossdev2025/my-ai-doc
+            </a>
+          </p>
+          <p>
+            🙌 内容へのPRも歓迎しています。構成の改善や記事の追加など、お気軽にどうぞ！
+          </p>
+          <p>
+            🐦 SNSでも情報発信中：{' '}
+            <a href="https://x.com/ossdev2025" target="_blank" rel="noopener noreferrer">
+              @ossdev2025（X / 旧Twitter）
+            </a>
+          </p>
+        </section>
+
+        <section>
+          <h2>🇺🇸 English</h2>
+          <p>I studied AI at the University of Tokyo and created this site to document what I learn.</p>
+          <p>
+            📌 GitHub repository:{' '}
+            <a href="https://github.com/ossdev2025/my-ai-doc" target="_blank" rel="noopener noreferrer">
+              ossdev2025/my-ai-doc
+            </a>
+          </p>
+          <p>
+            🙌 PRs are welcome — feel free to improve docs, structure, or add content!
+          </p>
+          <p>
+            🐦 Follow on X (formerly Twitter):{' '}
+            <a href="https://x.com/ossdev2025" target="_blank" rel="noopener noreferrer">
+              @ossdev2025
+            </a>
+          </p>
+        </section>
       </main>
     </Layout>
   );
