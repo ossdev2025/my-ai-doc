@@ -20,13 +20,8 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  scripts: [
-    // Google tag (gtag.js)
-    {
-      src: 'https://www.googletagmanager.com/gtag/js?id=G-J9JYY1B28K',
-      async: true,
-    },
-  ],
+  // Google Analytics (gtag.js) is now handled by @docusaurus/plugin-google-gtag
+  scripts: [],
   presets: [
     [
       'classic',
@@ -131,5 +126,15 @@ const config = {
       },
     }),
 };
+
+config.plugins = [
+  [
+    '@docusaurus/plugin-google-gtag',
+    {
+      trackingID: 'G-J9JYY1B28K',
+      anonymizeIP: true,
+    },
+  ],
+];
 
 module.exports = config;
