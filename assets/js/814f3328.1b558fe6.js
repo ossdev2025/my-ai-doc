@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_ai_docs=self.webpackChunkmy_ai_docs||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"#1 \u306a\u305c\u59cb\u3081\u308b\u304b","permalink":"/my-ai-doc/blog/2025/04/22/why-i-blog","unlisted":false,"date":"2025-04-22T00:00:00.000Z"}]}')}}]);
